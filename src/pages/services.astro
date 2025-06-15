@@ -1,0 +1,296 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Services - NeWenTech Consulting" description="Comprehensive cybersecurity, quality engineering, and automation services for small and medium businesses.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-secondary-900 to-primary-900 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+            Comprehensive Technology Services
+          </h1>
+          <p class="text-xl text-secondary-200 max-w-3xl mx-auto">
+            From cybersecurity assessments to automation solutions, we provide the expertise 
+            your business needs to thrive in today's digital landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cybersecurity Services -->
+    <section id="cybersecurity" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h2 class="text-3xl font-bold text-secondary-900">Cybersecurity Consulting</h2>
+            </div>
+            <p class="text-lg text-secondary-600 mb-6">
+              Protect your business from evolving cyber threats with comprehensive security assessments, 
+              strategic planning, and implementation of robust security measures.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Security Assessments</h3>
+                  <p class="text-secondary-600">Comprehensive evaluation of your current security posture and identification of vulnerabilities.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Penetration Testing</h3>
+                  <p class="text-secondary-600">Ethical hacking to identify security weaknesses before malicious actors can exploit them.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Compliance & Governance</h3>
+                  <p class="text-secondary-600">Ensure your organization meets industry standards and regulatory requirements.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Incident Response Planning</h3>
+                  <p class="text-secondary-600">Develop and implement strategies to quickly respond to and recover from security incidents.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Cybersecurity Solutions" 
+                 class="rounded-lg shadow-xl">
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Engineering Services -->
+    <section id="quality-engineering" class="py-20 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 relative">
+            <img src="https://images.pexels.com/photos/1181345/pexels-photo-1181345.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Quality Engineering" 
+                 class="rounded-lg shadow-xl">
+            <div class="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-accent-500 to-accent-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <h2 class="text-3xl font-bold text-secondary-900">Quality Engineering</h2>
+            </div>
+            <p class="text-lg text-secondary-600 mb-6">
+              Implement robust testing strategies and quality assurance processes to ensure reliable, 
+              high-performance software delivery that meets your business requirements.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Test Automation</h3>
+                  <p class="text-secondary-600">Develop comprehensive automated testing suites to ensure consistent quality and faster delivery.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">CI/CD Pipeline Implementation</h3>
+                  <p class="text-secondary-600">Streamline your development process with automated build, test, and deployment pipelines.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Performance Testing</h3>
+                  <p class="text-secondary-600">Ensure your applications perform optimally under various load conditions and stress scenarios.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-accent-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Quality Metrics & Reporting</h3>
+                  <p class="text-secondary-600">Implement comprehensive quality metrics and reporting systems to track and improve software quality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Automation Services -->
+    <section id="automation" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-success-500 to-success-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <h2 class="text-3xl font-bold text-secondary-900">Automation Solutions</h2>
+            </div>
+            <p class="text-lg text-secondary-600 mb-6">
+              Streamline your business operations with intelligent automation solutions that reduce manual work, 
+              minimize errors, and improve overall efficiency.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-success-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Process Automation</h3>
+                  <p class="text-secondary-600">Automate repetitive business processes to increase efficiency and reduce human error.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-success-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Workflow Integration</h3>
+                  <p class="text-secondary-600">Connect disparate systems and create seamless workflows across your organization.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-success-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Custom Scripts & Tools</h3>
+                  <p class="text-secondary-600">Develop custom automation scripts and tools tailored to your specific business needs.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-success-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Monitoring & Alerting</h3>
+                  <p class="text-secondary-600">Implement automated monitoring systems with intelligent alerting and reporting capabilities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Automation Solutions" 
+                 class="rounded-lg shadow-xl">
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-success-500 to-primary-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consulting Approach -->
+    <section id="consulting" class="py-20 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Our Consulting Approach
+          </h2>
+          <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+            We follow a structured, collaborative approach to ensure your success at every step of the engagement.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white font-bold text-xl">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Discovery & Assessment</h3>
+            <p class="text-secondary-600">
+              We start by understanding your current state, challenges, and objectives through comprehensive assessments and stakeholder interviews.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white font-bold text-xl">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Strategy & Planning</h3>
+            <p class="text-secondary-600">
+              Based on our findings, we develop a tailored strategy and implementation plan that aligns with your business goals and budget.
+            </p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-success-500 to-success-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <span class="text-white font-bold text-xl">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Implementation & Support</h3>
+            <p class="text-secondary-600">
+              We execute the plan with regular checkpoints and provide ongoing support to ensure sustainable success and continuous improvement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Ready to Transform Your Business?
+        </h2>
+        <p class="text-xl mb-8 text-primary-100">
+          Let's discuss how our services can help you achieve your technology and security goals.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" 
+             class="inline-flex items-center px-8 py-4 bg-white text-primary-600 hover:bg-secondary-50 font-semibold rounded-lg transition-colors duration-200 shadow-lg">
+            Schedule Free Consultation
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+          <a href="/about" 
+             class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold rounded-lg transition-all duration-200">
+            Learn More About Us
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

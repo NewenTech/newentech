@@ -1,0 +1,248 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About - NeWenTech" description="Learn about NeWenTech's mission to empower businesses with cybersecurity expertise and quality engineering solutions.">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-secondary-900 to-primary-900 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl lg:text-5xl font-bold mb-6">
+            About NeWenTech
+          </h1>
+          <p class="text-xl text-secondary-200 max-w-3xl mx-auto">
+            Empowering businesses through cybersecurity expertise, quality engineering, and innovative automation solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Our Mission
+            </h2>
+            <p class="text-lg text-secondary-600 mb-6">
+              At NeWenTech, we believe in the power of knowledge and technology to transform businesses. 
+              Our mission is to empower small and medium businesses with the cybersecurity expertise, 
+              quality engineering practices, and automation solutions they need to thrive in today's digital landscape.
+            </p>
+            <p class="text-lg text-secondary-600 mb-8">
+              The name "NeWen" comes from the Mapuche word meaning "power" or "strength." This reflects our 
+              commitment to providing our clients with the strength and resilience they need to face modern 
+              technology challenges with confidence.
+            </p>
+            <div class="flex items-center space-x-4">
+              <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-gradient-to-r from-primary-600 to-accent-600 rounded-lg flex items-center justify-center">
+                  <span class="text-white font-bold text-sm">Ne</span>
+                </div>
+                <div class="w-8 h-8 bg-gradient-to-l from-primary-600 to-accent-600 rounded-lg flex items-center justify-center">
+                  <span class="text-white font-bold text-sm">W</span>
+                </div>
+              </div>
+              <span class="text-secondary-600 italic">Strength through knowledge</span>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Team collaboration" 
+                 class="rounded-lg shadow-xl">
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-20 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Our Core Values
+          </h2>
+          <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+            These principles guide everything we do and shape how we work with our clients.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Empowerment</h3>
+            <p class="text-secondary-600">
+              We believe in empowering our clients with knowledge and tools to make informed decisions about their technology infrastructure.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Excellence</h3>
+            <p class="text-secondary-600">
+              We strive for excellence in every project, delivering high-quality solutions that exceed expectations and drive real results.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-success-500 to-success-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Collaboration</h3>
+            <p class="text-secondary-600">
+              We work closely with our clients as partners, fostering open communication and collaborative problem-solving approaches.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-warning-500 to-warning-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Continuous Learning</h3>
+            <p class="text-secondary-600">
+              We believe in continuous learning and knowledge sharing, both within our team and with the broader community.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Security First</h3>
+            <p class="text-secondary-600">
+              Security is not an afterthought but a fundamental principle that guides our approach to every solution we design and implement.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+            <div class="w-16 h-16 bg-gradient-to-r from-error-500 to-error-600 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Integrity</h3>
+            <p class="text-secondary-600">
+              We operate with complete transparency and honesty, building trust through ethical practices and reliable delivery.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learning & Content -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Learning and content creation" 
+                 class="rounded-lg shadow-xl">
+            <div class="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Sharing Knowledge & Learning
+            </h2>
+            <p class="text-lg text-secondary-600 mb-6">
+              We believe that knowledge grows when shared. Through our blog and YouTube channel, we document our learning journey, 
+              share insights from our consulting experiences, and contribute to the broader technology community.
+            </p>
+            <div class="space-y-4 mb-8">
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Technical Blog</h3>
+                  <p class="text-secondary-600">In-depth articles covering cybersecurity, quality engineering, and automation topics.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">YouTube Channel</h3>
+                  <p class="text-secondary-600">Video tutorials, case studies, and discussions about technology trends and best practices.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <svg class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <div>
+                  <h3 class="font-semibold text-secondary-900">Learning Documentation</h3>
+                  <p class="text-secondary-600">Transparent documentation of our learning process, challenges, and solutions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/blog" 
+                 class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200">
+                Read Our Blog
+                <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="https://youtube.com/@newentech" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center px-6 py-3 bg-transparent border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white font-semibold rounded-lg transition-all duration-200">
+                YouTube Channel
+                <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Ready to Work Together?
+        </h2>
+        <p class="text-xl mb-8 text-primary-100">
+          Let's discuss how NeWenTech can help strengthen your business through technology excellence.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" 
+             class="inline-flex items-center px-8 py-4 bg-white text-primary-600 hover:bg-secondary-50 font-semibold rounded-lg transition-colors duration-200 shadow-lg">
+            Get In Touch
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+          <a href="/services" 
+             class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold rounded-lg transition-all duration-200">
+            View Our Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

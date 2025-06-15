@@ -1,0 +1,298 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const recentPosts = await getCollection('blog');
+const sortedPosts = recentPosts
+  .filter(post => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<Layout title="NeWenTech - Cybersecurity & Quality Engineering Consulting">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-secondary-900 via-primary-900 to-accent-900 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+              Empower Your Business with 
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-300 to-accent-300">
+                Cybersecurity Excellence
+              </span>
+            </h1>
+            <p class="text-xl text-secondary-200 mb-8 leading-relaxed">
+              NeWenTech provides comprehensive cybersecurity consulting, quality engineering, and automation solutions 
+              to help small and medium businesses thrive in today's digital landscape.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/services" 
+                 class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+                Explore Services
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="/contact" 
+                 class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-secondary-900 font-semibold rounded-lg transition-all duration-200">
+                Get Consultation
+              </a>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Cybersecurity Professional" 
+                 class="rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-accent-500 to-primary-500 rounded-full blur-xl opacity-60"></div>
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-xl opacity-40"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Comprehensive Technology Solutions
+          </h2>
+          <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+            From cybersecurity to quality engineering, we provide the expertise your business needs to succeed and grow securely.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Cybersecurity -->
+          <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 border border-secondary-100">
+            <div class="w-16 h-16 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Cybersecurity Consulting</h3>
+            <p class="text-secondary-600 mb-6">
+              Comprehensive security assessments, vulnerability testing, and strategic security planning to protect your digital assets.
+            </p>
+            <a href="/services#cybersecurity" class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center">
+              Learn More
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quality Engineering -->
+          <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 border border-secondary-100">
+            <div class="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Quality Engineering</h3>
+            <p class="text-secondary-600 mb-6">
+              Implement robust testing strategies, CI/CD pipelines, and quality assurance processes to ensure reliable software delivery.
+            </p>
+            <a href="/services#quality-engineering" class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center">
+              Learn More
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Automation -->
+          <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-8 border border-secondary-100">
+            <div class="w-16 h-16 bg-gradient-to-r from-success-500 to-success-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold text-secondary-900 mb-4">Automation Solutions</h3>
+            <p class="text-secondary-600 mb-6">
+              Streamline your operations with custom automation solutions that reduce manual work and increase efficiency.
+            </p>
+            <a href="/services#automation" class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center">
+              Learn More
+              <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Why Choose NeWenTech?
+            </h2>
+            <p class="text-lg text-secondary-600 mb-8">
+              We combine deep technical expertise with practical business understanding to deliver solutions that make a real difference.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-secondary-900 mb-2">Expert Knowledge</h3>
+                  <p class="text-secondary-600">Years of experience in cybersecurity and quality engineering across various industries.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-secondary-900 mb-2">Tailored Solutions</h3>
+                  <p class="text-secondary-600">Custom approaches designed specifically for your business needs and budget constraints.</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-secondary-900 mb-2">Ongoing Support</h3>
+                  <p class="text-secondary-600">Continuous partnership with regular updates, monitoring, and optimization of your systems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                 alt="Professional Team" 
+                 class="rounded-lg shadow-xl">
+            <div class="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-xl opacity-30"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Blog Posts -->
+    {sortedPosts.length > 0 && (
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+              Latest Insights & Learning
+            </h2>
+            <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+              Discover our latest thoughts on cybersecurity, quality engineering, and technology trends.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {sortedPosts.map((post) => (
+              <article class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-secondary-100">
+                {post.data.heroImage && (
+                  <img src={post.data.heroImage} alt={post.data.title} class="w-full h-48 object-cover" />
+                )}
+                <div class="p-6">
+                  <div class="flex items-center mb-4">
+                    <span class="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                      {post.data.category}
+                    </span>
+                    <span class="text-secondary-500 text-sm ml-4">
+                      {post.data.pubDate.toLocaleDateString('en-US', { 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric' 
+                      })}
+                    </span>
+                  </div>
+                  <h3 class="text-xl font-bold text-secondary-900 mb-3 line-clamp-2">
+                    <a href={`/blog/${post.slug}`} class="hover:text-primary-600 transition-colors">
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-secondary-600 mb-4 line-clamp-3">
+                    {post.data.description}
+                  </p>
+                  <a href={`/blog/${post.slug}`} 
+                     class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center">
+                    Read More
+                    <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div class="text-center mt-12">
+            <a href="/blog" 
+               class="inline-flex items-center px-8 py-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl">
+              View All Posts
+              <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">
+          Ready to Strengthen Your Digital Infrastructure?
+        </h2>
+        <p class="text-xl mb-8 text-primary-100">
+          Let's discuss how NeWenTech can help secure and optimize your business operations.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" 
+             class="inline-flex items-center px-8 py-4 bg-white text-primary-600 hover:bg-secondary-50 font-semibold rounded-lg transition-colors duration-200 shadow-lg">
+            Schedule Consultation
+            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+            </svg>
+          </a>
+          <a href="/services" 
+             class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 font-semibold rounded-lg transition-all duration-200">
+            Explore Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
